@@ -158,7 +158,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background-color: #783E01;
+    background-color: #553308;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -176,6 +176,13 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+}
+.icon-row{
+    text-align:center;
+    color:#fff;
+    overflow:auto;
+    width:50%;
+    height:50%;
 }
 
 @media(min-width:768px) {
@@ -364,4 +371,20 @@ body{
     }
 .block.magic{
     background-color: #3D5771;
+}
+.logo{
+    display:block;
+    background-image: url('GTFTS.png');
+}
+.logo:hover{
+    display:block;
+    background-image: url('GTFTS_glow.png');
+}
+.img{
+    width:20%;
+    height:20%;
+
+    text-align:center;
+    display:inline-block;
+
 }
