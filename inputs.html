@@ -46,7 +46,24 @@
                             <input type="text"name="time" placeholder="7:00"/><br>
                             Call me if I don't wake up
                             <input type="text"name="phone_num" placeholder="647 xxx xxx"/><br>
-                            <div class="btn"><p><input type="submit" value="submit form" href="setup.html"></p></div>
+                            <div class="btn"><p><input type="submit" value="submit form" onclick="return foo();"></p></div>
+                                <p id="demo">FKJdlfhalkds</p>
+                                <script type="text/javascript">
+                                    function foo() {
+                                        var x = document.getElementById("frm1");
+                                        var text = "";
+                                        text = x.elements[0].value  ;
+                                        document.getElementById("demo").innerHTML = text;
+                                        $.ajax({
+                                          type: "POST",
+                                          url: "http://localhost:5050/api/alarm",
+                                          data: x.elements[0].value ,
+                                          success: null,
+                                          dataType: text
+                                        });
+                                        alert("Submit Worked");
+                                    }
+                                </script>
                         </form>
                     </div>
                 </div>
